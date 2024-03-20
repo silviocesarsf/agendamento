@@ -49,54 +49,66 @@
             android:layout_width="70dp"
             android:layout_height="7dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/border_radius"
+            android:background="@drawable/border_radius" />
 
-            />
-
-        <ScrollView
+        <HorizontalScrollView
             android:id="@+id/scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <FrameLayout
-                    android:layout_width="match_parent"
+                    android:id="@+id/btnAgendar"
+                    android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/circle_scroll" />
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_scroll"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/mustache" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="Agendar"
+                        android:textColor="@android:color/white"
+
+                        android:textSize="12dp" />
+
+                </FrameLayout>
 
                 <FrameLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/circle_scroll" />
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_scroll"
+                    android:padding="20dp">
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/circle_scroll" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="Agendar"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp" />
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/circle_scroll" />
+                </FrameLayout>
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/circle_scroll" />
 
             </LinearLayout>
-        </ScrollView>
-
+        </HorizontalScrollView>
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
